@@ -1,0 +1,39 @@
+/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar-brand{
+    font-size: large;
+}
+.hero-section {
+    background: linear-gradient(135deg, #007bff, #00ff88);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.about-section, .services-section, .gallery-section, .contact-section {
+    padding: 100px 0;
+}
+
+footer {
+    background-color: #000;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff !important;
+}
